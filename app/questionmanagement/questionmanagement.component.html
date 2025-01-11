@@ -1,0 +1,39 @@
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form>
+            <label>Qno:</label>
+            <input type="text" name="qno" [(ngModel)]="question.qno"><br><br>
+            <label>Question:</label>
+            <input type="text" name="qtext" [(ngModel)]="question.qtext" size="100px" style="padding: 20px;"><br><br>
+            <label>op1:</label>
+            <input name="op1" type="text"  [(ngModel)]="question.op1"><br><br>
+            <label>op2:</label>
+            <input name="op2" type="text"  [(ngModel)]="question.op2"><br><br>
+            <label>op3:</label>
+            <input name="op3" type="text"  [(ngModel)]="question.op3"><br><br>
+            <label>op4:</label>
+            <input name="op4" type="text"  [(ngModel)]="question.op4"><br><br>
+     
+            <label>Answer:</label>
+            <input type="text" name="answer" [(ngModel)]="question.answer"><br><br>
+            <label>subject:</label>
+            <input type="text" name="subject" [(ngModel)]="question.subject">
+
+            <input type="button" value="viewQestion" (click)="viewQuestion()">
+            
+            <input type="button" value="addQuestion" (click)="addQuestion()">
+
+            <input type="button" value="deleteQuestion" (click)="deleteQuestion()"> 
+       
+            <input type="button" value="updateQuestion" (click)="updateQuestion()"> 
+            
+       
+            
+        </form>
+        <span style="color: red; font-size: large;">{{message}}</span>
+    </body>
+</html>

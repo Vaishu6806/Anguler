@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <form>
+            <input type="text" name="username"[(ngModel)]="user.username">
+            <input type="password" name="password" [(ngModel)]="user.password">
+            <select name="subject" name="subject" [(ngModel)]="subject">
+                <option *ngFor="let subject of subjects" [value]="subject">{{subject}}</option>
+                <!-- <option>python</option> -->
+            </select>
+
+            <input type="button" value="login" (click)="validate()">
+            <input type="button" value="Admin login" (click)="validate2()">
+    
+
+        </form>
+    <span style="color: red;font-size: large;">{{message}}</span>    
+    </body>
+</html>
